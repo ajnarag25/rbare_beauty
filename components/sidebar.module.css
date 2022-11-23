@@ -1,0 +1,130 @@
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  .colorblack{
+    color: black;
+  }
+  .logo{
+    cursor: pointer;
+  }
+
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    background-color: #F3C8C8;
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1650px;
+  }
+
+  div.pink{
+    background-color: #FAB0B0;
+    margin-left: -200px;
+    width: 1000px;
+    height: 100px;
+  }
+
+  div.yellow{
+    background-color: #F5F799;
+    margin-left: -200px;
+    width: 1500px;
+    height: 100px;
+    margin-top: 70px;
+  }
+
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px;
+    padding: 5px;
+  }
+  
+  .gridcontainer > div {
+    text-align: center;
+  }
+  
+  .btn{
+    background-color: #DC9696;
+    margin-top: -5px;
+    color: black;
+    width: 250px;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .item1 {
+    grid-row: 1 / span 2;
+  }
+
+  .rbare{
+    margin-top: 50px;
+    margin-left: 150px;
+  }
+
+  .textcustom1{
+    margin-top: 150px;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    align-items: center;
+  }
+
+  .textcustom2{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .products{
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+  } 
+
+  .footer{
+    font-size: 25px;
+    color: black;
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  
